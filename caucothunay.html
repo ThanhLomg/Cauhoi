@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Mọt sách của cậu bảo là</title>
+<title>Yẹt sơ, em Long hỏi là..</title>
 <link href="loveletter/css/default.css" type="text/css" rel="stylesheet">
 <style>
 .hidden{
@@ -92,13 +92,13 @@
 </div>
 <div id="mainQues" style="transform: translateY(-100rem);width: 100%;display: flex;justify-content: center;">
     <div id="ques" style="margin-top:10rem;padding: 20px;box-shadow: rgba(42, 42, 43, 0.2) 0px 7px 29px 0px;width:30rem;background-color: #bbd1ff;" class="btn">
-        <h1 id="loiToTinh"></h1>
+        <h1 id="CauhoiCauhoi"></h1>
         <div class="ans" style="display: flex;justify-content: space-evenly;">
             <a id="hate" class="button1" onclick="hate()" style="transition: 1s;">
-                <button class="button-55" role="button">Không đâu</button>
+                <button class="button-55" role="button">Có </button>
             </a>
             <a id="start" class="button1" onclick="typeWriter()">
-                <button class="button-55" role="button">Có ạ</button>
+                <button class="button-55" role="button">Không </button>
             </a>
         </div>
     </div>
@@ -110,20 +110,20 @@
 
 <div id="slide" style="display:none">
     <a href="/index1.html">
-        <button style="display: inline-block;" class="button-56" role="button">Yêu em</button>
+        <button style="display: inline-block;" class="button-56" role="button"></button>
     </a>
     <a href="/index3.html">
-        <button style="display: inline-block;" class="button-56" role="button">Điều anh thích</button>
+        <button style="display: inline-block;" class="button-56" role="button"></button>
     </a>
 </div>
 </div>
     <script>
     var kichban = [
-        ['Cậu ơi, tớ muốn hỏi cậu cái này...','Cậu nói đi'],
-        ['Tớ muốn nói là..','yeah go ahead :>']
+        ['Có 1 câu hỏi như này','Ok'],
+        ['Em muốn nói là..','yeah go ahead :>']
     ]
-    var loiToTinh = 'Cậu có thích tớ không?'
-    var xacnhan = 'tớ cũng thế, hehe';
+    var Cauhoi = 'Chị Thảo có cutie khum?'
+    var xacnhan = 'hehe';
     var khiChonKhong = 'Đừng ngoan cố thế chọn nút kia đi!'
     var i = 0;
     var l=0,k=0;
@@ -176,8 +176,8 @@
     var n=0;
     function typer() {
         // document.getElementById("start").style.display="none"
-        if (n < loiToTinh.length) {
-            document.getElementById("loiToTinh").innerHTML += loiToTinh.charAt(n);
+        if (n < Cauhoi.length) {
+            document.getElementById("Cauhoi").innerHTML += Cauhoi.charAt(n);
             n++;
             setTimeout(typer, tocDo );
         }
